@@ -8,10 +8,26 @@
 
 namespace app\controllers;
 
+use ishop\base\Controller;
 
-class MainController
+class MainController extends AppController
 {
+//    public $title;
+//    public $desc;
+//    public $keywords;
+
     public function indexAction(){
-        echo __METHOD__;
+
+        $title = "Главная страница";
+        $desc = "Это главная страница крупшейшего интернет магазина";
+        $keywords = "главная, интернет-магазин, часы, сумки, отличные цены";
+
+        $this->setMeta($title, $desc, $keywords);
+
+        $name = 'John';
+        $age = 30;
+        $names = ['Andrey', 'Jane'];
+        $this->set(compact('name','age', 'names'));
+
     }
 }
