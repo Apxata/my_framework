@@ -8,16 +8,11 @@
 
 namespace app\controllers;
 
-use ishop\base\Controller;
-
 class MainController extends AppController
 {
-//    public $title;
-//    public $desc;
-//    public $keywords;
 
     public function indexAction(){
-
+        $posts = \R::findAll('test');
         $title = "Главная страница";
         $desc = "Это главная страница крупшейшего интернет магазина";
         $keywords = "главная, интернет-магазин, часы, сумки, отличные цены";
@@ -27,7 +22,7 @@ class MainController extends AppController
         $name = 'John';
         $age = 30;
         $names = ['Andrey', 'Jane'];
-        $this->set(compact('name','age', 'names'));
+        $this->set(compact('name','age', 'names', 'posts'));
 
     }
 }
