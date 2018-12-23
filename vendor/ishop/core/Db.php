@@ -20,6 +20,10 @@ class Db
         if(!\R::testConnection()) {
             throw new \Exception("Нет соедениня с БД", 500);
         }
+        \R::freeze(true);
+        if(DEBUG) {
+            \R::debug(true, 1);
+        }
     }
 
 }

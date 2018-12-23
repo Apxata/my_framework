@@ -13,6 +13,8 @@ class MainController extends AppController
 
     public function indexAction(){
         $posts = \R::findAll('test');
+        $post = \R::findOne('test', 'id = ?', [2]);
+
         $title = "Главная страница";
         $desc = "Это главная страница крупшейшего интернет магазина";
         $keywords = "главная, интернет-магазин, часы, сумки, отличные цены";
