@@ -16,13 +16,14 @@ class MainController extends AppController
     public function indexAction(){
 
         $brands = \R::find('brand', 'LIMIT 3');
+        $hits = \R::find('product', "hit = '1' AND status = '1' LIMIT 8");
 
         $title = "Главная страница";
         $desc = "Это главная страница крупшейшего интернет магазина";
         $keywords = "главная, интернет-магазин, часы, сумки, отличные цены";
 
         $this->setMeta($title, $desc, $keywords);
-        $this->set(compact('brands'));
+        $this->set(compact('brands', 'hits'));
 
 
 
