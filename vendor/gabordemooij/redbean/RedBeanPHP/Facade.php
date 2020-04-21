@@ -23,7 +23,10 @@ use RedBeanPHP\Util\MatchUp as MatchUp;
 use RedBeanPHP\Util\Look as Look;
 use RedBeanPHP\Util\Diff as Diff;
 use RedBeanPHP\Util\Tree as Tree;
+<<<<<<< HEAD
 use RedBeanPHP\Util\Feature;
+=======
+>>>>>>> f02853443d4e9555015c282eed0e0a3359cbec5a
 
 /**
  * RedBean Facade
@@ -2856,6 +2859,7 @@ class Facade
 	}
 
 	/**
+<<<<<<< HEAD
 	 * Toggles support for nuke().
 	 * Can be used to turn off the nuke() feature for security reasons.
 	 * Returns the old flag value.
@@ -2884,6 +2888,8 @@ class Facade
 	}
 
 	/**
+=======
+>>>>>>> f02853443d4e9555015c282eed0e0a3359cbec5a
 	 * Dynamically extends the facade with a plugin.
 	 * Using this method you can register your plugin with the facade and then
 	 * use the plugin by invoking the name specified plugin name as a method on

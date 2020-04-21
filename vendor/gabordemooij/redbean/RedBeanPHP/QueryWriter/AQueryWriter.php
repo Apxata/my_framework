@@ -99,11 +99,14 @@ abstract class AQueryWriter
 	public $typeno_sqltype = array();
 
 	/**
+<<<<<<< HEAD
 	 * @var bool
 	 */
 	protected static $noNuke = false;
 
 	/**
+=======
+>>>>>>> f02853443d4e9555015c282eed0e0a3359cbec5a
 	 * Toggles support for automatic generation of JSON columns.
 	 * Using JSON columns means that strings containing JSON will
 	 * cause the column to be created (not modified) as a JSON column.
@@ -123,6 +126,7 @@ abstract class AQueryWriter
 	}
 
 	/**
+<<<<<<< HEAD
 	 * Toggles support for nuke().
 	 * Can be used to turn off the nuke() feature for security reasons.
 	 * Returns the old flag value.
@@ -138,6 +142,8 @@ abstract class AQueryWriter
 	}
 
 	/**
+=======
+>>>>>>> f02853443d4e9555015c282eed0e0a3359cbec5a
 	 * Checks whether a number can be treated like an int.
 	 *
 	 * @param  string $value string representation of a certain value

@@ -44,6 +44,7 @@ class Nuke extends Base
 		asrt( count( R::getWriter()->getTables() ), 1 );
 		R::freeze( FALSE );
 	}
+<<<<<<< HEAD
 
 	/**
 	 * Test noNuke().
@@ -66,4 +67,6 @@ class Nuke extends Base
 		R::nuke();
 		asrt( count( R::getWriter()->getTables() ), 0 );
 	}
+=======
+>>>>>>> f02853443d4e9555015c282eed0e0a3359cbec5a
 }

@@ -75,7 +75,10 @@ addFile( DIR . 'Util/MatchUp.php' );
 addFile( DIR . 'Util/Look.php' );
 addFile( DIR . 'Util/Diff.php' );
 addFile( DIR . 'Util/Tree.php' );
+<<<<<<< HEAD
 addFile( DIR . 'Util/Feature.php' );
+=======
+>>>>>>> f02853443d4e9555015c282eed0e0a3359cbec5a
 addFile( DIR . 'Plugin.php' );
 
 $func = file_get_contents(DIR . 'Functions.php');
